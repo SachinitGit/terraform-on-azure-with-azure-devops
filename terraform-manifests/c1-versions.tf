@@ -30,3 +30,5 @@ provider "azurerm" {
 }
 
 #simple commentss
+
+#QA, Stage and Prod environment created
