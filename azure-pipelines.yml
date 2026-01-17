@@ -17,3 +17,42 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+
+
+  - task: CopyPublishBuildArtifacts@1
+    inputs:
+      CopyRoot: 'vjb'
+      Contents: 'bkn'
+      ArtifactName: 'gikh'
+      ArtifactType: 'Container'
+
+
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'gi'
+    Contents: '**'
+    TargetFolder: 'oho'
+
+
+- task: WindowsMachineFileCopy@2
+  inputs:
+    SourcePath: 'ljl'
+    MachineNames: 'lnln'
+    AdminUserName: 'knk'
+    AdminPassword: 'khho'
+    TargetPath: 'nkn'
+
+
+- task: CopyPublishBuildArtifacts@1
+  inputs:
+    CopyRoot: 'g'
+    Contents: '**'
+    ArtifactName: 'jb'
+    ArtifactType: 'Container'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
